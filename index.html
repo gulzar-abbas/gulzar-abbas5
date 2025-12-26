@@ -1,0 +1,914 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gulzar Abbas | SEO & Digital Marketing Specialist</title>
+ <meta name="description" content="Gulzar Abbas is a results-driven SEO Specialist and Google AdSense Expert based in Pakistan. With 2+ years at GB Digital, he collaborates with his team to rank websites in highly competitive niches. He is currently working on 8+ tool-based and informational websites, combining On-Page SEO, Off-Page SEO, Technical SEO, AI-powered SEO, and AdSense expertise to build digital assets that rank, grow traffic, and generate revenue.">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<meta name="author" content="GulzarAbbas">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gulzar Abbas | SEO & Digital Marketing Specialist">
+    <meta property="og:Gulzar Abbas is a results-driven SEO Specialist and Google AdSense Expert based in Pakistan. With 2+ years at GB Digital, he collaborates with his team to rank websites in highly competitive niches. He is currently working on 8+ tool-based and informational websites, combining On-Page SEO, Off-Page SEO, Technical SEO, AI-powered SEO, and AdSense expertise to build digital assets that rank, grow traffic, and generate revenue.">
+
+
+<style>
+
+/* =========================
+   COLOR TEMPLATE (CHANGED)
+   ========================= */
+:root {
+  --primary: #22c55e;          /* Emerald */
+  --primary-dark: #16a34a;
+
+  --bg-main: #020617;          /* Dark slate */
+  --bg-secondary: #0f172a;
+
+  --card-bg: #020617;
+  --card-border: #1e293b;
+
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+  --white: #ffffff;
+
+  --radius-lg: 16px;
+  --radius-md: 12px;
+
+  --shadow-soft: 0 12px 40px rgba(0,0,0,0.45);
+}
+
+/* =========================
+   GLOBAL (UNCHANGED LOGIC)
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, var(--bg-secondary), var(--bg-main));
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(2,6,23,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 2rem 4rem;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.hero-text h2 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.hero-text p {
+  color: var(--text-muted);
+  max-width: 600px;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.7rem 1.6rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #020617;
+}
+
+.btn-secondary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+section {
+  padding: 6rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.3rem;
+  color: var(--white);
+}
+
+/* =========================
+   CARDS (PROJECTS, SKILLS, ETC)
+   ========================= */
+.card,
+.project-card,
+.skills-category,
+.experience-card,
+.education-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+/* =========================
+   PROJECT GRID
+   ========================= */
+.projects-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: var(--text-muted);
+}
+
+.project-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(34,197,94,0.1);
+  color: var(--primary);
+  border: 1px solid rgba(34,197,94,0.25);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--text-muted);
+}
+.social-circle {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-circle a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: var(--card-bg);
+  border-radius: 50%;
+  color: var(--primary);
+  font-size: 1.5rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.social-circle a:hover {
+  transform: scale(1.2) rotate(10deg);
+  background: var(--primary);
+  color: #020617;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">Gulzar Abbas</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <!-- Your name first, bold and prominent -->
+      <h1 style="color: var(--primary); font-weight: 900; font-size: 3.5rem; margin-bottom: 1rem;">Gulzar Abbas</h1>
+      
+      <!-- Rest of the hero text below -->
+      <h2>SEO & Digital Marketing Specialist</h2>
+      <h3>On-Page • Off-Page • Technical SEO</h3>
+      <p>
+        Experienced SEO & Digital Marketing Specialist driving scalable growth through content optimization, backlink strategy, and technical SEO.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="section-title">
+    <h2>About Me</h2>
+  </div>
+
+  <div class="projects-grid">
+    <div class="card">
+      <h3>SEO & Digital Marketing Specialist</h3>
+      <p>
+        I am <strong>Gulzar Abbas</strong>, an SEO & Digital Marketing Specialist based in
+        <strong>Islamabad & Skardu, Pakistan</strong>, with strong hands-on experience in
+        <strong>On-Page, Off-Page, and Technical SEO</strong>.
+      </p>
+
+      <p>
+        Worked on 30+ tool-based websites, info sites, and APKs, and led 20+ SEO projects, with multiple ranking highly on Google. Proof available on request.</strong>
+        serving thousands of active users. My work focuses on building scalable SEO-driven
+        platforms that rank on <strong>Google, ChatGPT, Perplexity, and Gemini</strong>.
+      </p>
+
+      <p>
+        I specialize in content optimization, backlink outreach, cloud stacking strategies,
+        and technical SEO improvements that increase visibility, authority, and organic leads.
+      </p>
+</section>
+
+
+<section id="projects">
+  <div class="section-title">
+    <h2>Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>
+        <a href="https://facetypedetector.org/" target="_blank" rel="noopener">
+          Face Type Detector
+        </a>
+      </h3>
+      <p>
+        An AI-powered online tool that analyzes facial features to identify face shape
+        accurately for styling and personalization purposes.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://whatismyfaceshape.net/" target="_blank" rel="noopener">
+          What Is My Face Shape
+        </a>
+      </h3>
+      <p>
+        A user-friendly web tool that helps users determine their face shape with
+        simple guidance and visual analysis.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://stylishfont.io/" target="_blank" rel="noopener">
+          Stylish Font
+        </a>
+      </h3>
+      <p>
+        An online font generator that converts normal text into stylish and fancy
+        fonts for social media and creative use.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://reminimodapk.io/" target="_blank" rel="noopener">
+          Remini Mod APK
+        </a>
+      </h3>
+      <p>
+        A resource website providing detailed information and downloads related to
+        the Remini photo enhancement application.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://floraviadecor.com/" target="_blank" rel="noopener">
+          Floravia Decor
+        </a>
+      </h3>
+      <p>
+        An interior design and home decor inspiration website featuring modern ideas,
+        trends, and decorative solutions.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://countrycode.io/" target="_blank" rel="noopener">
+          Country Code
+        </a>
+      </h3>
+      <p>
+        A fast and simple lookup tool that provides international dialing codes and
+        country-related calling information.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://cloudstacking.net/" target="_blank" rel="noopener">
+          Cloud Stacking
+        </a>
+      </h3>
+      <p>
+        A specialized website focused on cloud stacking techniques and resources for
+        building online authority.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://balti.pk/" target="_blank" rel="noopener">
+          Balti.pk
+        </a>
+      </h3>
+      <p>
+        A tourism and informational platform showcasing destinations, culture, and
+        travel guides related to Gilgit-Baltistan.
+      </p>
+    </div>
+
+    <!-- NEW PROJECTS -->
+    <div class="project-card">
+      <h3>
+        <a href="https://videocutter.org/" target="_blank" rel="noopener">
+          Video Cutter
+        </a>
+      </h3>
+      <p>
+        A browser-based professional video trimming tool for editing videos easily
+        without software installation.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://www.ai-face-swap.com/" target="_blank" rel="noopener">
+          AI Face Swap
+        </a>
+      </h3>
+      <p>
+        An AI-powered face swapping tool that allows users to replace faces in images
+        or videos realistically.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://whatisthecolor.net/" target="_blank" rel="noopener">
+          What Is The Color
+        </a>
+      </h3>
+      <p>
+        A web tool that identifies colors from images and provides detailed color codes
+        for designers and developers.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://whatismynoseshape.com/" target="_blank" rel="noopener">
+          What Is My Nose Shape
+        </a>
+      </h3>
+      <p>
+        An online tool that helps users discover their nose shape using visual analysis
+        for beauty and styling purposes.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+        <a href="https://www.trexgame.org/" target="_blank" rel="noopener">
+          T-Rex Game
+        </a>
+      </h3>
+      <p>
+        A fun browser-based offline running game featuring the T-Rex dinosaur,
+        playable anytime for entertainment.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- Chrome Extension Arsenal Section -->
+<section id="chrome-extensions">
+  <div class="section-title">
+    <h2>Chrome Extension Arsenal</h2>
+  </div>
+
+  <div class="projects-grid compact-grid">
+
+    <!-- GSC Enhancer -->
+    <div class="project-card fade-in-up">
+      <div class="project-header">
+        <div class="project-icon"><i class="fab fa-google"></i></div>
+        <div class="project-badge">SEO</div>
+      </div>
+      <div class="project-content">
+        <h4>GSC Enhancer</h4>
+        <p class="project-description">Google Search Console interactive data visualization.</p>
+        <a href="https://chromewebstore.google.com/detail/google-search-console-enh/djlfbedmfimfbghmmaplocmieldkkkob?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Website SEO Checker -->
+    <div class="project-card fade-in-up">
+      <div class="project-header">
+        <div class="project-icon"><i class="fas fa-search"></i></div>
+        <div class="project-badge">SEO</div>
+      </div>
+      <div class="project-content">
+        <h4>Website SEO Checker</h4>
+        <p class="project-description">Instant on-page SEO analysis.</p>
+        <a href="https://chromewebstore.google.com/detail/website-seo-checker/jfhjbellbcogljkhajiaacciibfmhfgb?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- XML Sitemap Extension -->
+    <div class="project-card fade-in-up">
+      <div class="project-header">
+        <div class="project-icon"><i class="fas fa-code-branch"></i></div>
+        <div class="project-badge">Featured</div>
+      </div>
+      <div class="project-content">
+        <h4>XML Sitemap Extension</h4>
+        <p class="project-description">Generate sitemaps instantly from browser.</p>
+        <a href="https://chromewebstore.google.com/detail/xml-sitemap/olnnnhmebnbandgnhfaiggfjoklbmgab?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- GMB Categories -->
+    <div class="project-card fade-in-up">
+      <div class="project-header">
+        <div class="project-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="project-badge">Local</div>
+      </div>
+      <div class="project-content">
+        <h4>GMB Categories</h4>
+        <p class="project-description">Reveal hidden Google My Business categories.</p>
+        <a href="https://chromewebstore.google.com/detail/gmb-categories/abidiibiancfpnhpdpmbdhnahobijloe?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- AI QuickLaunch -->
+    <div class="project-card fade-in-up">
+      <div class="project-header">
+        <div class="project-icon"><i class="fas fa-robot"></i></div>
+        <div class="project-badge">AI</div>
+      </div>
+      <div class="project-content">
+        <h4>AI QuickLaunch</h4>
+        <p class="project-description">Quick access to AI prompts and tools.</p>
+        <a href="https://chromewebstore.google.com/detail/ai-quicklaunch/kphnbmcddpedkkbpklenmapjbkcphgcm?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Website Schema -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-code"></i></div></div>
+      <div class="project-content">
+        <h4>Website Schema</h4>
+        <p class="project-description">Validate structured data.</p>
+        <a href="https://chromewebstore.google.com/detail/website-schema/ijpjmaapfjljokkinfcnijgmkimbgfoi?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Heading Extractor -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-heading"></i></div></div>
+      <div class="project-content">
+        <h4>Heading Extractor</h4>
+        <p class="project-description">Visualize H1-H6 document structure.</p>
+        <a href="https://chromewebstore.google.com/detail/heading-extractor/dmghcobaamhdfjdpiomncmcdjmhhnile?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- View CSS -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fab fa-css3"></i></div></div>
+      <div class="project-content">
+        <h4>View CSS</h4>
+        <p class="project-description">Inspect CSS of any element.</p>
+        <a href="https://chromewebstore.google.com/detail/view-css/onlmbgemedcfbohodjgdgbbhkcbdjikf?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Favicon Detector -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-image"></i></div></div>
+      <div class="project-content">
+        <h4>Favicon Detector</h4>
+        <p class="project-description">Extract high-res favicons.</p>
+        <a href="https://chromewebstore.google.com/detail/favicon-detector/nnglpegaoddddkmcghldellcoomcionj?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Save Image As Type -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-file-image"></i></div><div class="project-badge">Popular</div></div>
+      <div class="project-content">
+        <h4>Save Image As Type</h4>
+        <p class="project-description">Save images as PNG, JPG, WEBP, ICO instantly.</p>
+        <a href="https://chromewebstore.google.com/detail/save-image-as-png-jpg-web/lnchllndlgeaepadiidnmhnemlkffjpo?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Extension Manager -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-toggle-on"></i></div></div>
+      <div class="project-content">
+        <h4>Extension Manager</h4>
+        <p class="project-description">Quickly enable/disable chrome extensions.</p>
+        <a href="https://chromewebstore.google.com/detail/extension-manager/inghjfkejigdceanfokpekkmmnfhjbjc?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Clipboard Manager -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-clipboard-list"></i></div></div>
+      <div class="project-content">
+        <h4>Clipboard Manager</h4>
+        <p class="project-description">Manage clipboard history effectively.</p>
+        <a href="https://chromewebstore.google.com/detail/clipboard-manager-clipboa/ljkmgapjfjgnffkmfdcpbnjjikgnoamc?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- LinkedIn Formatter -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fab fa-linkedin"></i></div></div>
+      <div class="project-content">
+        <h4>LinkedIn Formatter</h4>
+        <p class="project-description">Format text for LinkedIn posts.</p>
+        <a href="https://chromewebstore.google.com/detail/linkedin-formatter/lfjjnfalkjdbbbdhjeabfhioimccbcnp?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- WADirect Extension -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fab fa-whatsapp"></i></div></div>
+      <div class="project-content">
+        <h4>WADirect Extension</h4>
+        <p class="project-description">WhatsApp messaging helper tool.</p>
+        <a href="https://chromewebstore.google.com/detail/wadirect-message/oilbcbfanlcgkiifgekacpbafobgknli?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Arabic Keyboard -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-keyboard"></i></div></div>
+      <div class="project-content">
+        <h4>Arabic Keyboard</h4>
+        <p class="project-description">On-screen Arabic typing tool.</p>
+        <a href="https://chromewebstore.google.com/detail/arabic-keyboard/gcgcdmjldohjlnalcfphikgdbflpkemc?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Country Code Ext -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-flag"></i></div></div>
+      <div class="project-content">
+        <h4>Country Code Ext</h4>
+        <p class="project-description">Browser access to dialing codes.</p>
+        <a href="https://chromewebstore.google.com/detail/country-code/bkhendidheflelgpogcfneoaahamajal?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Slate Theme -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-palette"></i></div></div>
+      <div class="project-content">
+        <h4>Slate Theme</h4>
+        <p class="project-description">Minimalist Slate theme for Chrome.</p>
+        <a href="https://chromewebstore.google.com/detail/slate-theme-for-google-ch/pjanechopmbgelbpnopkgocneikmhcck?authuser=0&hl=en" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+    <!-- Block Analytics -->
+    <div class="project-card fade-in-up">
+      <div class="project-header"><div class="project-icon"><i class="fas fa-user-shield"></i></div></div>
+      <div class="project-content">
+        <h4>Block Analytics</h4>
+        <p class="project-description">Block your own visits from GA.</p>
+        <a href="https://chromewebstore.google.com/detail/block-yourself-from-analy/abbpfmfhdagohdmbefhalchcjbapannn?hl=en&authuser=0" target="_blank" class="project-link">Chrome Store</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+</section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+            
+                     
+                       
+                </div>
+            </div>
+
+            <div class="experience-card fade-in-up">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Senior Seo Expert</h3>
+                        <h4>Gbdigitaltech - Islamabad </h4>
+                    </div>
+                    <div class="experience-duration">Current</div>
+                </div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Managing complete digital marketing portfolio: SEO, blogging , Pintrest Blogging.</li>
+                        <li>Create high-quality content ranking on Google, ChatGPT, Perplexity, and Gemini.</li>
+                        <li>Managing social media accounts to enhance branding, engage audiences, and drive growth.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-card fade-in-up">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Off Page Seo Expert</h3>
+                        <h4>Jantrah Tech  - Islamabad </h4>
+                    </div>
+                    <div class="experience-duration">3 Months</div>
+                </div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Here I manage off-page SEO for UK service websites, handling guest post outreach, link building, and content promotion to improve search rankings and domain authority.</li>
+                        <li>In a short span of time, I successfully rank keywords and generate quality leads</li>
+                    </ul>
+                </div>
+            </div>         
+    </section>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-title">
+    <h2>Professional Skills</h2>
+    <p>Tools & Domains I Excel In</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Digital Marketing -->
+    <div class="project-card">
+      <h3>
+        <i class="fas fa-chart-line"></i>
+        Digital Marketing
+      </h3>
+      <p>
+        Strong expertise in planning, executing, and scaling data-driven
+        digital marketing strategies for long-term growth.
+      </p>
+
+      <div style="margin-top:1rem;">
+        <span class="project-badge">SEO</span>
+        <span class="project-badge">Blogging</span>
+        <span class="project-badge">Pintrest Blogging</span>
+        <span class="project-badge">Content Writing</span>
+        <span class="project-badge">Email Marketing</span>
+      </div>
+    </div>
+
+    <!-- Development -->
+    <div class="project-card">
+      <h3>
+        <i class="fas fa-code"></i>
+        Development </h3>
+      <p>
+        Building SEO-focused tools that improve search visibility, performance, and user experience.
+      </p>
+
+      <div style="margin-top:1rem;">
+        <span class="project-badge">HTML / CSS</span>
+        <span class="project-badge">JavaScript</span>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="project-card">
+      <h3>
+        <i class="fas fa-tools"></i>
+        Professional Tools
+      </h3>
+      <p>
+        Hands-on experience with industry-standard SEO, analytics,
+        and performance optimization tools.
+      </p>
+
+      <div style="margin-top:1rem;">
+        <span class="project-badge">Ahrefs</span>
+        <span class="project-badge">SEMrush</span>
+        <span class="project-badge">GA4</span>
+        <span class="project-badge">Google Trend</span>
+        <span class="project-badge">Screaming Frog</span>
+        <span class="project-badge">Google Search Console</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-title">
+               <section id="education" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Education</h2>
+      <p>Academic Background</p>
+    </div>
+
+    <div class="education-timeline">
+
+      <!-- BS Economics -->
+      <div class="education-item fade-in-up">
+        <div class="education-card">
+          <h3>BS Economics (Graduated)</h3>
+          <h4>National University Of Modern Language, Islamabad, Pakistan</h4>
+          <p>Exploring economic modeling, policy research, and quantitative analysis.</p>
+        </div>
+      </div>
+
+      <!-- FSC in ICS -->
+      <div class="education-item fade-in-up">
+        <div class="education-card">
+          <h3>FSC (ICS)</h3>
+          <h4>Chenab Group Of Colleges, Islamabad</h4>
+          <p>Focused on computer science, mathematics, and analytical skills.</p>
+        </div>
+      </div>
+
+      <!-- Matric -->
+      <div class="education-item fade-in-up">
+        <div class="education-card">
+          <h3>Matriculation</h3>
+          <h4>Uswa College, Islamabad</h4>
+          <p>Completed secondary education with emphasis on science subjects.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="social" class="section">
+  <div class="section-title">
+    <h2>Connect With Me</h2>
+      </div>
+
+  <div class="social-circle">
+    <a href="https://www.linkedin.com/in/gulzar-abbas-545a8423b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/gulzar-abbas" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/gulzar.abbasbalti/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/face_shape_detector?igsh=MTQ4MjllaDFsbGZwZg==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@floraviadecor" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://x.com/Gulzarabbas01" target="_blank"><i class="fab fa-x-twitter"></i></a>
+
+  </div>
+</section>
+
+        </div>
+    </section>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Me</h2>
+  </div>
+
+  <div class="projects-grid">
+    <div class="card">
+      <h3>Let’s Work Together</h3>
+      <p>
+        Have a project, website, or SEO challenge in mind?
+        Feel free to reach out — I’m open to collaborations,
+        consulting, and long-term SEO projects.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:Gulzarabbas4@gmail.com">
+          Gulzarabbas4@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Location:</strong> Islamabad, Pakistan
+      </p>
+
+      <div style="margin-top:1.2rem;">
+        <a href="mailto:Gulzarabbas4@gmail.com" class="btn btn-primary">
+          Send Email
+        </a>
+        <a href="https://www.linkedin.com/in/gulzar-abbas-545a8423b/" target="_blank" class="btn btn-secondary">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Gulzar Abbas — SEO & Digital Specialist
+</footer>
+
+</body>
+</html>
